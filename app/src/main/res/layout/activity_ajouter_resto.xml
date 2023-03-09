@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.megasusini.projet_resto_android.controleur.AjouterResto">
+
+    <SurfaceView
+        android:id="@+id/surfaceView2"
+        android:layout_width="720dp"
+        android:layout_height="45dp"
+        android:foreground="#5db860"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:text="Ajouter un restaurant"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLibNomR"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Nom :"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surfaceView2" />
+
+    <EditText
+        android:id="@+id/editTextNomR"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLibNomR" />
+
+    <TextView
+        android:id="@+id/textViewlibVoieAdrR"
+        android:layout_width="365dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:text="Voie d'adresse :"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumAdR" />
+
+    <EditText
+        android:id="@+id/editTextVoieAdrR"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewlibVoieAdrR" />
+
+    <TextView
+        android:id="@+id/textViewLibNumAdr"
+        android:layout_width="349dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:text="Numéro d'adresse :"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNomR" />
+
+    <EditText
+        android:id="@+id/editTextNumAdR"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLibNumAdr" />
+
+    <TextView
+        android:id="@+id/textViewLibVilleR"
+        android:layout_width="360dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:text="Ville :"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCpR" />
+
+    <EditText
+        android:id="@+id/editTextVilleR"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLibVilleR" />
+
+    <TextView
+        android:id="@+id/textViewlibCpR"
+        android:layout_width="366dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:text="Code postal :"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextVoieAdrR" />
+
+    <EditText
+        android:id="@+id/editTextCpR"
+        android:layout_width="367dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewlibCpR" />
+
+    <TextView
+        android:id="@+id/textViewLibDescR"
+        android:layout_width="366dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:text="Description :"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextVilleR" />
+
+    <EditText
+        android:id="@+id/editTextDescR"
+        android:layout_width="369dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLibDescR" />
+
+    <EditText
+        android:id="@+id/editTextHorairesR"
+        android:layout_width="369dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLibHorairesR" />
+
+    <TextView
+        android:id="@+id/textViewLibHorairesR"
+        android:layout_width="367dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:text="Horaires :"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDescR" />
+
+    <Button
+        android:id="@+id/buttonAjouterR"
+        android:layout_width="126dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="139dp"
+        android:layout_weight="1"
+        android:backgroundTint="#5db860"
+        android:text="Ajouter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextHorairesR" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

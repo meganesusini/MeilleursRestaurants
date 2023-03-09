@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MeilleursRestaurants"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".Controleur.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Controleur.AccueilAdminActivity" />
+        <activity android:name=".Controleur.AccueilUtilisateurActivity" />
+        <activity android:name=".Controleur.AjouterCritiqueActivity" />
+        <activity android:name=".Controleur.AjouterRestoActivity" />
+        <activity android:name=".Controleur.ConnexionActivity" />
+        <activity android:name=".Controleur.ConsultationDunUserActivity" />
+        <activity android:name=".Controleur.ConsultationUserActivity" />
+        <activity android:name=".Controleur.ConsulterCritiquesActivity" />
+        <activity android:name=".Controleur.FicheRestaurantActivity" />
+        <activity android:name=".Controleur.GestionRestosActivity" />
+        <activity android:name=".Controleur.InscriptionActivity" />
+        <activity android:name=".Controleur.MenuAdminGestionUserActivity" />
+        <activity android:name=".Controleur.ModifierCritiquesActivity" />
+        <activity android:name=".Controleur.ModifierRestoActivity" />
+        <activity android:name=".Controleur.RechercheUtilisateurActivity" />
+        <activity android:name=".Controleur.SuppressionUserActivity" />
+        <activity android:name=".Controleur.SupprimerRestoActivity" />
+        <activity android:name=".Controleur.SupprimerRestoAimeActivity" />
+        <activity android:name=".Controleur.UpdateProfileActivity" />
+    </application>
+
+</manifest>
